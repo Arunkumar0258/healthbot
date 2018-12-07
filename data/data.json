@@ -1,0 +1,286 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "Hi",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "Hey",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "Hi bot",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "Hey bot",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "Hello",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "Good morning",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "Good evening",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hi again",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hi pal!",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hi friend",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hey doc",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hello doctor",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hi there",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hello anybody here?",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hello can anyone help?",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "please help",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "pls help me",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "Bye",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "Goodbye",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "See you later",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "Bye bot",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "Bye doc",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "Bye doctor",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "catch you later",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "gotta go",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "see you!",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "good night",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "have a nice day",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "Talk to you later",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "Thank you",
+        "intent": "thank",
+        "entities": []
+      },
+      {
+        "text": "Thanks",
+        "intent": "thank",
+        "entities": []
+      },
+      {
+        "text": "Thank you so much",
+        "intent": "thank",
+        "entities": []
+      },
+      {
+        "text": "Thanks bot",
+        "intent": "thank",
+        "entities": []
+      },
+      {
+        "text": "Thanks doctor",
+        "intent": "thank",
+        "entities": []
+      },
+      {
+        "text": "Thanks for that",
+        "intent": "thank",
+        "entities": []
+      },
+      {
+        "text": "ok, thanks!",
+        "intent": "thank",
+        "entities": []
+      },
+      {
+        "text": "perfect",
+        "intent": "thank",
+        "entities": []
+      },
+      {
+        "text": "thanks a bunch for everything",
+        "intent": "thank",
+        "entities": []
+      },
+      {
+        "text": "thanks for the help",
+        "intent": "thank",
+        "entities": []
+      },
+      {
+        "text": "thanks a lot",
+        "intent": "thank",
+        "entities": []
+      },
+      {
+        "text": "amazing thanks",
+        "intent": "thank",
+        "entities": []
+      },
+      {
+        "text": "cool, thanks",
+        "intent": "thank",
+        "entities": []
+      },
+      {
+        "text": "great",
+        "intent": "thank",
+        "entities": []
+      },
+      {
+        "text": "great work",
+        "intent": "thank",
+        "entities": []
+      },
+      {
+        "text": "My name is Arun",
+        "intent": "name",
+        "entities": [
+          {
+            "start": 11,
+            "end": 15,
+            "value": "Arun",
+            "entity": ""
+          }
+        ]
+      },
+      {
+        "text": "I am Abhinav",
+        "intent": "name",
+        "entities": [
+          {
+            "start": 5,
+            "end": 12,
+            "value": "Abhinav",
+            "entity": ""
+          }
+        ]
+      },
+      {
+        "text": "I'm Shrutika",
+        "intent": "name",
+        "entities": [
+          {
+            "start": 4,
+            "end": 12,
+            "value": "Shrutika",
+            "entity": ""
+          }
+        ]
+      },
+      {
+        "text": "People call me Billy",
+        "intent": "name",
+        "entities": [
+          {
+            "start": 15,
+            "end": 20,
+            "value": "Billy",
+            "entity": ""
+          }
+        ]
+      },
+      {
+        "text": "You can call me Arun",
+        "intent": "name",
+        "entities": [
+          {
+            "start": 16,
+            "end": 20,
+            "value": "Arun",
+            "entity": ""
+          }
+        ]
+      }
+    ]
+  }
+}
