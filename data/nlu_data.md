@@ -55,8 +55,8 @@
 - great suggestion
 
 ## intent:name
-- My name is [Arun]
-- I am [Abhinav]
-- I'm [Shrutika]
-- People call me [Billy]
-- You can call me [Arun]
+- My name is [Arun](name)
+- I am [Abhinav](name)
+- I'm [Shrutika](name)
+- People call me [Billy](name)
+- You can call me [Arun](name)
