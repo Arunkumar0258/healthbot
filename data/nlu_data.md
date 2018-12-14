@@ -60,3 +60,6 @@
 - I'm [Shrutika](name)
 - People call me [Billy](name)
 - You can call me [Arun](name)
+
+## intent:medicine
+- What [medicine](remedy) should I take if I have [headache](symptom)
