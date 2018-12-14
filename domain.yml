@@ -1,0 +1,44 @@
+entities:
+  - name
+  - remedy
+  - symptom
+
+intents:
+  - greet
+  - bye
+  - thank
+  - ask_name
+  - medicine
+
+slots:
+  name:
+    type: text
+  remedy:
+    type: text
+  symptom:
+    type: text
+
+templates:
+  utter_greet:
+    - text: "Hello, How can I help you?"
+    - text: "Hello, tell me your problems! I will cure them!"
+  utter_bye:
+    - text: "Have a nice day!"
+    - text: "Talk to you later {name}"
+    - text: "Goodbye"
+    - text: "Bye, it was nice talking to you!"
+  utter_thank:
+    - text: "You are welcome."
+    - text: "Glad you liked my service"
+  utter_ask_name:
+    - text: "Nice name! I shall call you {name} from now."
+  utter_medicine:
+    - text: "I think Sumoflam should do"
+
+actions:
+  - utter_greet
+  - utter_bye
+  - utter_thank
+  - utter_ask_name
+  - utter_medicine
+
