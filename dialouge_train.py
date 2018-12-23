@@ -21,7 +21,7 @@ def train_dialouge(domain_file='domain.yml',
 
     agent = Agent(domain_file,
                   policies=[MemoizationPolicy(),
-                            KerasPolicy(max_history=3, epochs=200, batch_size=2)])
+                            KerasPolicy(max_history=3, epochs=50, batch_size=2)])
     data = agent.load_data(training_data_file)
     agent.train(data)
     agent.persist(output_model_path)

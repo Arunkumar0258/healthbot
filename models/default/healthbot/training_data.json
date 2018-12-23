@@ -1,287 +1,329 @@
 {
   "rasa_nlu_data": {
-    "entity_synonyms": [],
-    "regex_features": [],
     "common_examples": [
       {
-        "text": "hi",
-        "intent": "greet"
-      },
-      {
-        "text": "hey",
-        "intent": "greet"
-      },
-      {
-        "text": "hello",
-        "intent": "greet"
-      },
-      {
-        "text": "hey bot",
-        "intent": "greet"
-      },
-      {
-        "text": "hey doc",
-        "intent": "greet"
-      },
-      {
-        "text": "hello doctor",
-        "intent": "greet"
-      },
-      {
-        "text": "hi bot",
-        "intent": "greet"
-      },
-      {
-        "text": "greetings",
-        "intent": "greet"
-      },
-      {
-        "text": "good morning",
-        "intent": "greet"
-      },
-      {
-        "text": "good evening",
-        "intent": "greet"
-      },
-      {
-        "text": "hi again",
-        "intent": "greet"
-      },
-      {
-        "text": "hey pal!",
-        "intent": "greet"
-      },
-      {
-        "text": "hi friend",
-        "intent": "greet"
-      },
-      {
-        "text": "hello anybody here?",
-        "intent": "greet"
-      },
-      {
-        "text": "hello help me!",
-        "intent": "greet"
-      },
-      {
-        "text": "can you help me?",
-        "intent": "greet"
-      },
-      {
-        "text": "please help",
-        "intent": "greet"
-      },
-      {
-        "text": "pls help me",
-        "intent": "greet"
-      },
-      {
-        "text": "bye",
-        "intent": "bye"
-      },
-      {
-        "text": "goodbye",
-        "intent": "bye"
-      },
-      {
-        "text": "see you later",
-        "intent": "bye"
-      },
-      {
-        "text": "bye bot",
-        "intent": "bye"
-      },
-      {
-        "text": "goodbye doc",
-        "intent": "bye"
-      },
-      {
-        "text": "bye doctor",
-        "intent": "bye"
-      },
-      {
-        "text": "catch you later",
-        "intent": "bye"
-      },
-      {
-        "text": "gotta go",
-        "intent": "bye"
-      },
-      {
-        "text": "i have to go",
-        "intent": "bye"
-      },
-      {
-        "text": "see you!",
-        "intent": "bye"
-      },
-      {
-        "text": "good night",
-        "intent": "bye"
-      },
-      {
-        "text": "have a nice day",
-        "intent": "bye"
-      },
-      {
-        "text": "talk to you later",
-        "intent": "bye"
-      },
-      {
-        "text": "later bye",
-        "intent": "bye"
-      },
-      {
-        "text": "later",
-        "intent": "bye"
-      },
-      {
-        "text": "thank you",
-        "intent": "thank"
-      },
-      {
-        "text": "thanks",
-        "intent": "thank"
-      },
-      {
-        "text": "thank you so much",
-        "intent": "thank"
-      },
-      {
-        "text": "thanks bot",
-        "intent": "thank"
-      },
-      {
-        "text": "thanks doctor",
-        "intent": "thank"
-      },
-      {
-        "text": "thanks for that",
-        "intent": "thank"
-      },
-      {
-        "text": "thanks for helping me",
-        "intent": "thank"
-      },
-      {
-        "text": "thanks for the help!",
-        "intent": "thank"
-      },
-      {
-        "text": "ok, thanks!!",
-        "intent": "thank"
-      },
-      {
-        "text": "perfect",
-        "intent": "thank"
-      },
-      {
-        "text": "thanks a lot",
-        "intent": "thank"
-      },
-      {
-        "text": "amazing thanks",
-        "intent": "thank"
-      },
-      {
-        "text": "cool, thanks",
-        "intent": "thank"
-      },
-      {
-        "text": "thank you for the suggestion",
-        "intent": "thank"
-      },
-      {
-        "text": "how can i thank you?",
-        "intent": "thank"
-      },
-      {
-        "text": "great work",
-        "intent": "thank"
-      },
-      {
-        "text": "great suggestion",
-        "intent": "thank"
-      },
-      {
-        "text": "My name is Arun",
-        "intent": "name",
         "entities": [
           {
-            "value": "Arun",
-            "end": 15,
             "start": 11,
-            "entity": "name"
-          }
-        ]
-      },
-      {
-        "text": "I am Abhinav",
-        "intent": "name",
-        "entities": [
-          {
-            "value": "Abhinav",
-            "end": 12,
-            "start": 5,
-            "entity": "name"
-          }
-        ]
-      },
-      {
-        "text": "I'm Shrutika",
-        "intent": "name",
-        "entities": [
-          {
-            "value": "Shrutika",
-            "end": 12,
-            "start": 4,
-            "entity": "name"
-          }
-        ]
-      },
-      {
-        "text": "People call me Billy",
-        "intent": "name",
-        "entities": [
-          {
-            "value": "Billy",
-            "end": 20,
-            "start": 15,
-            "entity": "name"
-          }
-        ]
-      },
-      {
-        "text": "You can call me Arun",
-        "intent": "name",
-        "entities": [
-          {
             "value": "Arun",
-            "end": 20,
-            "start": 16,
-            "entity": "name"
+            "entity": "name",
+            "end": 15
           }
-        ]
+        ],
+        "intent": "ask_name",
+        "text": "My name is Arun"
       },
       {
-        "text": "What medicine should I take if I have headache",
-        "intent": "medicine",
         "entities": [
           {
-            "value": "medicine",
-            "end": 13,
             "start": 5,
-            "entity": "remedy"
-          },
-          {
-            "value": "headache",
-            "end": 46,
-            "start": 38,
-            "entity": "symptom"
+            "value": "Abhinav",
+            "entity": "name",
+            "end": 12
           }
-        ]
+        ],
+        "intent": "ask_name",
+        "text": "I am Abhinav"
+      },
+      {
+        "entities": [
+          {
+            "start": 4,
+            "value": "Shrutika",
+            "entity": "name",
+            "end": 12
+          }
+        ],
+        "intent": "ask_name",
+        "text": "I'm Shrutika"
+      },
+      {
+        "entities": [
+          {
+            "start": 15,
+            "value": "Billy",
+            "entity": "name",
+            "end": 20
+          }
+        ],
+        "intent": "ask_name",
+        "text": "People call me Billy"
+      },
+      {
+        "entities": [
+          {
+            "start": 16,
+            "value": "Arun",
+            "entity": "name",
+            "end": 20
+          }
+        ],
+        "intent": "ask_name",
+        "text": "You can call me Arun"
+      },
+      {
+        "intent": "bye",
+        "text": "bye"
+      },
+      {
+        "intent": "bye",
+        "text": "goodbye"
+      },
+      {
+        "intent": "bye",
+        "text": "see you later"
+      },
+      {
+        "intent": "bye",
+        "text": "bye bot"
+      },
+      {
+        "intent": "bye",
+        "text": "goodbye doc"
+      },
+      {
+        "intent": "bye",
+        "text": "bye doctor"
+      },
+      {
+        "intent": "bye",
+        "text": "catch you later"
+      },
+      {
+        "intent": "bye",
+        "text": "gotta go"
+      },
+      {
+        "intent": "bye",
+        "text": "i have to go"
+      },
+      {
+        "intent": "bye",
+        "text": "see you!"
+      },
+      {
+        "intent": "bye",
+        "text": "good night"
+      },
+      {
+        "intent": "bye",
+        "text": "have a nice day"
+      },
+      {
+        "intent": "bye",
+        "text": "talk to you later"
+      },
+      {
+        "intent": "bye",
+        "text": "later bye"
+      },
+      {
+        "intent": "bye",
+        "text": "later"
+      },
+      {
+        "intent": "bye",
+        "text": "I have to go."
+      },
+      {
+        "intent": "greet",
+        "text": "hi"
+      },
+      {
+        "intent": "greet",
+        "text": "hey"
+      },
+      {
+        "intent": "greet",
+        "text": "hello"
+      },
+      {
+        "intent": "greet",
+        "text": "hey bot"
+      },
+      {
+        "intent": "greet",
+        "text": "hey doc"
+      },
+      {
+        "intent": "greet",
+        "text": "hello doctor"
+      },
+      {
+        "intent": "greet",
+        "text": "hi bot"
+      },
+      {
+        "intent": "greet",
+        "text": "greetings"
+      },
+      {
+        "intent": "greet",
+        "text": "good morning"
+      },
+      {
+        "intent": "greet",
+        "text": "good evening"
+      },
+      {
+        "intent": "greet",
+        "text": "hi again"
+      },
+      {
+        "intent": "greet",
+        "text": "hey pal!"
+      },
+      {
+        "intent": "greet",
+        "text": "hi friend"
+      },
+      {
+        "intent": "greet",
+        "text": "hello anybody here?"
+      },
+      {
+        "intent": "greet",
+        "text": "hello help me!"
+      },
+      {
+        "intent": "greet",
+        "text": "can you help me?"
+      },
+      {
+        "intent": "greet",
+        "text": "please help"
+      },
+      {
+        "intent": "greet",
+        "text": "pls help me"
+      },
+      {
+        "intent": "greet",
+        "text": "hello how are you"
+      },
+      {
+        "intent": "greet",
+        "text": "hey"
+      },
+      {
+        "intent": "greet",
+        "text": "hey"
+      },
+      {
+        "intent": "greet",
+        "text": "hello"
+      },
+      {
+        "entities": [
+          {
+            "start": 29,
+            "value": "headache",
+            "entity": "symptom",
+            "end": 37
+          }
+        ],
+        "intent": "medicine",
+        "text": "What should I take if I have headache"
+      },
+      {
+        "entities": [
+          {
+            "start": 13,
+            "value": "headache",
+            "entity": "symptom",
+            "end": 21
+          }
+        ],
+        "intent": "medicine",
+        "text": "I have got a headache"
+      },
+      {
+        "entities": [
+          {
+            "start": 12,
+            "value": "headache",
+            "entity": "symptom",
+            "end": 20
+          }
+        ],
+        "intent": "medicine",
+        "text": "I am having headache"
+      },
+      {
+        "intent": "thank",
+        "text": "thank you"
+      },
+      {
+        "intent": "thank",
+        "text": "thanks"
+      },
+      {
+        "intent": "thank",
+        "text": "thank you so much"
+      },
+      {
+        "intent": "thank",
+        "text": "thanks bot"
+      },
+      {
+        "intent": "thank",
+        "text": "thanks doctor"
+      },
+      {
+        "intent": "thank",
+        "text": "thanks for that"
+      },
+      {
+        "intent": "thank",
+        "text": "thanks for helping me"
+      },
+      {
+        "intent": "thank",
+        "text": "thanks for the help!"
+      },
+      {
+        "intent": "thank",
+        "text": "ok, thanks!!"
+      },
+      {
+        "intent": "thank",
+        "text": "perfect"
+      },
+      {
+        "intent": "thank",
+        "text": "thanks a lot"
+      },
+      {
+        "intent": "thank",
+        "text": "amazing thanks"
+      },
+      {
+        "intent": "thank",
+        "text": "cool, thanks"
+      },
+      {
+        "intent": "thank",
+        "text": "thank you for the suggestion"
+      },
+      {
+        "intent": "thank",
+        "text": "how can i thank you?"
+      },
+      {
+        "intent": "thank",
+        "text": "great work"
+      },
+      {
+        "intent": "thank",
+        "text": "great suggestion"
+      },
+      {
+        "intent": "thank",
+        "text": "You are great thank you"
       }
     ],
+    "entity_synonyms": [],
+    "regex_features": [],
     "lookup_tables": []
   }
 }

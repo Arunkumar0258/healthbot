@@ -1,2 +1,4 @@
 action_endpoint:
   url: "http://localhost:5055/webhook"
+core_endpoint:
+  url: "http://localhost:5055"

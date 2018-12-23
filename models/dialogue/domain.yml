@@ -6,22 +6,36 @@ actions:
 - utter_greet
 - utter_bye
 - utter_thank
+config:
+  store_entities_as_slots: true
 entities:
 - name
 - symptom
+forms: []
 intents:
-- greet
-- medicine
-- bye
-- thank
-- ask_name
+- bye:
+    use_entities: true
+- greet:
+    use_entities: true
+- thank:
+    use_entities: true
+- ask_name:
+    use_entities: true
+- medicine:
+    use_entities: true
 slots:
   name:
-    type: text
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
   remedy:
-    type: text
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
   symptom:
-    type: text
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
 templates:
   utter_ask_name:
   - text: Nice name! I shall call you {name} from now.

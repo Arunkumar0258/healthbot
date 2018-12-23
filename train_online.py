@@ -15,7 +15,6 @@ from rasa_core.interpreter import RasaNLUInterpreter
 
 logger = logging.getLogger(__name__)
 
-
 def train_agent(interpreter,
                 domain_file="domain.yml",
                 training_file='data/stories.md'):

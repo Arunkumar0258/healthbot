@@ -1,3 +1,30 @@
+## intent:ask_name
+- My name is [Arun](name)
+- I am [Abhinav](name)
+- I'm [Shrutika](name)
+- People call me [Billy](name)
+- You can call me [Arun](name)
+- My name is [Arun](name:arun)
+
+## intent:bye
+- bye
+- goodbye
+- see you later
+- bye bot
+- goodbye doc
+- bye doctor
+- catch you later
+- gotta go
+- i have to go
+- see you!
+- good night
+- have a nice day
+- talk to you later
+- later bye
+- later
+- I have to go.
+- I am going now
+
 ## intent:greet
 - hi
 - hey
@@ -17,23 +44,21 @@
 - can you help me?
 - please help
 - pls help me
+- hello how are you
+- hey
+- hey
+- hello
+- hi there
+- hey ther
 
-## intent:bye
-- bye
-- goodbye
-- see you later
-- bye bot
-- goodbye doc
-- bye doctor
-- catch you later
-- gotta go
-- i have to go
-- see you!
-- good night
-- have a nice day
-- talk to you later
-- later bye
-- later
+## intent:medicine
+- What should I take if I have [headache](symptom)
+- I have got a [headache](symptom)
+- I am having [headache](symptom)
+- I have [asthma](symptom)
+- I am having a [headache](symptom)
+- i have a [headache](symptom)
+- i have a [headache](symptom)
 
 ## intent:thank
 - thank you
@@ -53,13 +78,8 @@
 - how can i thank you?
 - great work
 - great suggestion
+- You are great thank you
+- I want to thank you
 
-## intent:name
-- My name is [Arun](name)
-- I am [Abhinav](name)
-- I'm [Shrutika](name)
-- People call me [Billy](name)
-- You can call me [Arun](name)
-
-## intent:medicine
-- What [medicine](remedy) should I take if I have [headache](symptom)
+## synonym:arun
+- Arun
