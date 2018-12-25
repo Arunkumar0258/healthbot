@@ -60,6 +60,20 @@
 - i have a [headache](symptom)
 - i have a [headache](symptom)
 
+## intent:out_of_scope
+- What is the global optimum of a non-convex function
+- Tell me about quantum computing
+- Who is [Donald Trump](name)?
+- What do you think an idiot looks like?
+- Why is [Gamora](name)?
+- What is [Gamora](name)?
+- Do you know anything about soccer
+- Tell me about football
+- What is quantum computing
+- Do you know about soccer?
+- Do you know who is Justin Trudeau
+- Do you know quantum computing?
+
 ## intent:thank
 - thank you
 - thanks

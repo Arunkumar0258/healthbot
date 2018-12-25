@@ -1,20 +1,22 @@
 %YAML 1.1
 ---
 actions:
+- utter_bye
+- utter_greet
+- utter_thank
 - utter_ask_name
 - action_medicine
-- utter_greet
-- utter_bye
-- utter_thank
+- utter_default
 entities:
-- name
 - symptom
+- name
 intents:
+- out_of_scope
+- ask_name
 - greet
 - medicine
 - bye
 - thank
-- ask_name
 slots:
   name:
     type: text
@@ -30,6 +32,8 @@ templates:
   - text: Talk to you later {name}
   - text: Goodbye
   - text: Bye, it was nice talking to you!
+  utter_default:
+  - text: Sorry, I did not understand you
   utter_greet:
   - text: Hello, How can I help you?
   - text: Hello, tell me your problems! I will cure them!

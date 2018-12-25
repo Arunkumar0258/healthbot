@@ -20,6 +20,10 @@
 * bye
     - utter_bye
 
+## story_6
+* out_of_scope
+    - utter_default
+
 ## Generated Story -8395475876387399729
 * greet
     - utter_greet
@@ -49,4 +53,14 @@
 * medicine{"symptom": "headache"}
     - slot{"symptom": "headache"}
     - action_medicine
+
+## Generated Story -2385938240831074220
+* out_of_scope
+    - utter_default
+* out_of_scope
+    - utter_default
+* out_of_scope
+    - utter_default
+* out_of_scope
+    - utter_default
 
