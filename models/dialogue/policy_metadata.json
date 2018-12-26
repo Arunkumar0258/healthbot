@@ -1,15 +1,27 @@
 {
-  "rasa_core": "0.12.3",
+  "max_histories": [
+    5,
+    3,
+    null
+  ],
   "policy_names": [
     "rasa_core.policies.memoization.MemoizationPolicy",
-    "rasa_core.policies.keras_policy.KerasPolicy"
+    "rasa_core.policies.keras_policy.KerasPolicy",
+    "rasa_core.policies.fallback.FallbackPolicy"
   ],
-  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
+  "trained_at": "20181226-230016",
+  "rasa_core": "0.12.3",
   "action_fingerprints": {
-    "utter_thank": {
+    "utter_default": {
+      "slots": []
+    },
+    "action_medicine": {
       "slots": []
     },
     "utter_greet": {
+      "slots": []
+    },
+    "utter_thank": {
       "slots": []
     },
     "utter_bye": {
@@ -17,18 +29,11 @@
     },
     "action_listen": {
       "slots": [
-        "name",
-        "symptom"
+        "symptom",
+        "name"
       ]
-    },
-    "action_medicine": {
-      "slots": []
     }
   },
-  "trained_at": "20181223-231736",
-  "max_histories": [
-    5,
-    3
-  ],
-  "python": "3.5.2"
+  "python": "3.5.2",
+  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble"
 }

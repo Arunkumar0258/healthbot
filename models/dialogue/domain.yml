@@ -1,10 +1,12 @@
 %YAML 1.1
 ---
 actions:
-- utter_ask_name
-- action_medicine
+- utter_default
 - utter_greet
 - utter_bye
+- utter_ask_name
+- utter_get_happy_images
+- action_medicine
 - utter_thank
 config:
   store_entities_as_slots: true
@@ -15,13 +17,17 @@ forms: []
 intents:
 - bye:
     use_entities: true
-- greet:
-    use_entities: true
 - thank:
     use_entities: true
 - ask_name:
     use_entities: true
+- out_of_scope:
+    use_entities: true
 - medicine:
+    use_entities: true
+- get_happy_images:
+    use_entities: true
+- greet:
     use_entities: true
 slots:
   name:
@@ -44,6 +50,11 @@ templates:
   - text: Talk to you later {name}
   - text: Goodbye
   - text: Bye, it was nice talking to you!
+  utter_default:
+  - text: Sorry, I did not understand you
+  utter_get_happy_images:
+  - image: http://cutestcats.us/wp-content/uploads/2014/07/The-Happiest-Smiling-Cat-In-The-Universe.jpg
+    text: Here is something to cheer you up
   utter_greet:
   - text: Hello, How can I help you?
   - text: Hello, tell me your problems! I will cure them!

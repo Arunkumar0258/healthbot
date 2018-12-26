@@ -1,6 +1,4 @@
 {
-    "training_data": "training_data.json",
-    "language": "en",
     "pipeline": [
         {
             "name": "nlp_spacy",
@@ -17,8 +15,16 @@
             "class": "rasa_nlu.featurizers.spacy_featurizer.SpacyFeaturizer"
         },
         {
-            "scoring_function": "f1_weighted",
+            "gamma": [
+                0.1
+            ],
+            "name": "intent_classifier_sklearn",
+            "kernels": [
+                "linear"
+            ],
+            "class": "rasa_nlu.classifiers.sklearn_intent_classifier.SklearnIntentClassifier",
             "classifier_file": "intent_classifier_sklearn.pkl",
+            "max_cross_validation_folds": 5,
             "C": [
                 1,
                 2,
@@ -27,21 +33,10 @@
                 20,
                 100
             ],
-            "name": "intent_classifier_sklearn",
-            "max_cross_validation_folds": 5,
-            "kernels": [
-                "linear"
-            ],
-            "class": "rasa_nlu.classifiers.sklearn_intent_classifier.SklearnIntentClassifier",
-            "gamma": [
-                0.1
-            ]
+            "scoring_function": "f1_weighted"
         },
         {
             "L1_c": 0.1,
-            "name": "ner_crf",
-            "class": "rasa_nlu.extractors.crf_entity_extractor.CRFEntityExtractor",
-            "BILOU_flag": true,
             "features": [
                 [
                     "low",
@@ -67,11 +62,16 @@
                     "upper"
                 ]
             ],
-            "L2_c": 0.1,
             "max_iterations": 50,
-            "classifier_file": "crf_model.pkl"
+            "name": "ner_crf",
+            "L2_c": 0.1,
+            "class": "rasa_nlu.extractors.crf_entity_extractor.CRFEntityExtractor",
+            "classifier_file": "crf_model.pkl",
+            "BILOU_flag": true
         }
     ],
-    "trained_at": "20181221-000817",
+    "language": "en",
+    "trained_at": "20181226-225321",
+    "training_data": "training_data.json",
     "rasa_nlu_version": "0.13.8"
 }

@@ -2,8 +2,10 @@
   "states": [
     "intent_ask_name",
     "intent_bye",
+    "intent_get_happy_images",
     "intent_greet",
     "intent_medicine",
+    "intent_out_of_scope",
     "intent_thank",
     "entity_name",
     "entity_symptom",
@@ -14,10 +16,12 @@
     "prev_action_restart",
     "prev_action_default_fallback",
     "prev_action_deactivate_form",
-    "prev_utter_ask_name",
-    "prev_action_medicine",
+    "prev_utter_default",
     "prev_utter_greet",
     "prev_utter_bye",
+    "prev_utter_ask_name",
+    "prev_utter_get_happy_images",
+    "prev_action_medicine",
     "prev_utter_thank"
   ]
 }

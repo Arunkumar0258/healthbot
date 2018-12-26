@@ -25,6 +25,22 @@
 - I have to go.
 - I am going now
 
+## intent:get_happy_images
+- Can you get me image of a cat?
+- Can you make me happy?
+- Make me smile
+- I am feeling sad
+- I dont feel good
+- Make me laugh
+- Please make me laugh
+- Can you show me something amusing?
+- Amuse me
+- Make me roll
+- Get me a happy image
+- I want to be happy
+- Show me something
+- Can you show me something amusing?
+
 ## intent:greet
 - hi
 - hey
@@ -50,6 +66,7 @@
 - hello
 - hi there
 - hey ther
+- Hi good morning
 
 ## intent:medicine
 - What should I take if I have [headache](symptom)
@@ -94,6 +111,7 @@
 - great suggestion
 - You are great thank you
 - I want to thank you
+- thanks
 
 ## synonym:arun
 - Arun

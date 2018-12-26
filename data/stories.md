@@ -64,3 +64,11 @@
 * out_of_scope
     - utter_default
 
+## Generated Story 7439725141992755319
+* get_happy_images
+    - utter_get_happy_images
+* greet
+    - utter_greet
+* thank
+    - utter_thank
+

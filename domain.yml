@@ -1,22 +1,24 @@
 %YAML 1.1
 ---
 actions:
-- utter_bye
-- utter_greet
-- utter_thank
-- utter_ask_name
-- action_medicine
 - utter_default
+- utter_greet
+- utter_bye
+- utter_ask_name
+- utter_get_happy_images
+- action_medicine
+- utter_thank
 entities:
-- symptom
 - name
+- symptom
 intents:
-- out_of_scope
-- ask_name
-- greet
 - medicine
-- bye
 - thank
+- greet
+- ask_name
+- get_happy_images
+- out_of_scope
+- bye
 slots:
   name:
     type: text
@@ -34,6 +36,9 @@ templates:
   - text: Bye, it was nice talking to you!
   utter_default:
   - text: Sorry, I did not understand you
+  utter_get_happy_images:
+  - image: http://cutestcats.us/wp-content/uploads/2014/07/The-Happiest-Smiling-Cat-In-The-Universe.jpg
+    text: Here is something to cheer you up
   utter_greet:
   - text: Hello, How can I help you?
   - text: Hello, tell me your problems! I will cure them!
