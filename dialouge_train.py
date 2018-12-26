@@ -5,11 +5,14 @@ from __future__ import print_function
 
 import logging
 import rasa_core
+import os
 from rasa_core.agent import Agent
 from rasa_core.policies.keras_policy import KerasPolicy
 from rasa_core.policies.memoization import MemoizationPolicy
 from rasa_core.policies.fallback import FallbackPolicy
 from rasa_core.interpreter import RasaNLUInterpreter
+from rasa_core.channels.facebook import FacebookInput
+from bot_server_channel import BotServerInputChannel
 from rasa_core.utils import EndpointConfig
 from rasa_core.run import serve_application
 from rasa_core import config
@@ -40,9 +43,15 @@ def run_health_bot(serve_forever=True):
     agent = Agent.load('./models/dialogue', interpreter=interpreter,
                        action_endpoint=action_endpoint)
 
-    rasa_core.run.serve_application(agent, channel='cmdline')
+    channel = BotServerInputChannel(agent, port=5002)
 
-    return agent
+    input_channel = FacebookInput(
+        fb_verify=os.environ['FB_VERIFY'],
+        fb_secret=os.environ['FB_BOT_SECRET'],
+        fb_access_token=os.environ['FB_PAGE_ACCESS_TOKEN']
+    )
+    agent.handle_channels([channel, input_channel], http_port=5002, serve_forever=True)
+    #  rasa_core.run.serve_application(agent, channel=s, credentials_file='./credentials.yml')
 
 if __name__ == '__main__':
     train_dialouge()
