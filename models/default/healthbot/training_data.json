@@ -1,536 +1,580 @@
 {
   "rasa_nlu_data": {
-    "regex_features": [],
-    "entity_synonyms": [
-      {
-        "value": "arun",
-        "synonyms": [
-          "Arun"
-        ]
-      }
-    ],
     "common_examples": [
       {
-        "text": "My name is Arun",
+        "intent": "ask_name",
         "entities": [
           {
+            "start": 11,
             "entity": "name",
             "value": "Arun",
-            "end": 15,
-            "start": 11
+            "end": 15
           }
         ],
-        "intent": "ask_name"
+        "text": "My name is Arun"
       },
       {
-        "text": "I am Abhinav",
+        "intent": "ask_name",
         "entities": [
           {
+            "start": 5,
             "entity": "name",
             "value": "Abhinav",
-            "end": 12,
-            "start": 5
+            "end": 12
           }
         ],
-        "intent": "ask_name"
+        "text": "I am Abhinav"
       },
       {
-        "text": "I'm Shrutika",
+        "intent": "ask_name",
         "entities": [
           {
+            "start": 4,
             "entity": "name",
             "value": "Shrutika",
-            "end": 12,
-            "start": 4
+            "end": 12
           }
         ],
-        "intent": "ask_name"
+        "text": "I'm Shrutika"
       },
       {
-        "text": "People call me Billy",
+        "intent": "ask_name",
         "entities": [
           {
+            "start": 15,
             "entity": "name",
             "value": "Billy",
-            "end": 20,
-            "start": 15
+            "end": 20
           }
         ],
-        "intent": "ask_name"
+        "text": "People call me Billy"
       },
       {
-        "text": "You can call me Arun",
+        "intent": "ask_name",
         "entities": [
           {
+            "start": 16,
             "entity": "name",
             "value": "Arun",
-            "end": 20,
-            "start": 16
+            "end": 20
           }
         ],
-        "intent": "ask_name"
+        "text": "You can call me Arun"
       },
       {
-        "text": "My name is Arun",
+        "intent": "ask_name",
         "entities": [
           {
+            "start": 11,
             "entity": "name",
             "value": "arun",
-            "end": 15,
-            "start": 11
+            "end": 15
           }
         ],
-        "intent": "ask_name"
+        "text": "My name is Arun"
       },
       {
-        "text": "bye",
-        "intent": "bye"
+        "intent": "bye",
+        "text": "bye"
       },
       {
-        "text": "goodbye",
-        "intent": "bye"
+        "intent": "bye",
+        "text": "goodbye"
       },
       {
-        "text": "see you later",
-        "intent": "bye"
+        "intent": "bye",
+        "text": "see you later"
       },
       {
-        "text": "bye bot",
-        "intent": "bye"
+        "intent": "bye",
+        "text": "bye bot"
       },
       {
-        "text": "goodbye doc",
-        "intent": "bye"
+        "intent": "bye",
+        "text": "goodbye doc"
       },
       {
-        "text": "bye doctor",
-        "intent": "bye"
+        "intent": "bye",
+        "text": "bye doctor"
       },
       {
-        "text": "catch you later",
-        "intent": "bye"
+        "intent": "bye",
+        "text": "catch you later"
       },
       {
-        "text": "gotta go",
-        "intent": "bye"
+        "intent": "bye",
+        "text": "gotta go"
       },
       {
-        "text": "i have to go",
-        "intent": "bye"
+        "intent": "bye",
+        "text": "i have to go"
       },
       {
-        "text": "see you!",
-        "intent": "bye"
+        "intent": "bye",
+        "text": "see you!"
       },
       {
-        "text": "good night",
-        "intent": "bye"
+        "intent": "bye",
+        "text": "good night"
       },
       {
-        "text": "have a nice day",
-        "intent": "bye"
+        "intent": "bye",
+        "text": "have a nice day"
       },
       {
-        "text": "talk to you later",
-        "intent": "bye"
+        "intent": "bye",
+        "text": "talk to you later"
       },
       {
-        "text": "later bye",
-        "intent": "bye"
+        "intent": "bye",
+        "text": "later bye"
       },
       {
-        "text": "later",
-        "intent": "bye"
+        "intent": "bye",
+        "text": "later"
       },
       {
-        "text": "I have to go.",
-        "intent": "bye"
+        "intent": "bye",
+        "text": "I have to go."
       },
       {
-        "text": "I am going now",
-        "intent": "bye"
+        "intent": "bye",
+        "text": "I am going now"
       },
       {
-        "text": "hi",
-        "intent": "greet"
+        "intent": "get_happy_images",
+        "text": "Can you get me image of a cat?"
       },
       {
-        "text": "hey",
-        "intent": "greet"
+        "intent": "get_happy_images",
+        "text": "Can you make me happy?"
       },
       {
-        "text": "hello",
-        "intent": "greet"
+        "intent": "get_happy_images",
+        "text": "Make me smile"
       },
       {
-        "text": "hey bot",
-        "intent": "greet"
+        "intent": "get_happy_images",
+        "text": "I am feeling sad"
       },
       {
-        "text": "hey doc",
-        "intent": "greet"
+        "intent": "get_happy_images",
+        "text": "I dont feel good"
       },
       {
-        "text": "hello doctor",
-        "intent": "greet"
+        "intent": "get_happy_images",
+        "text": "Make me laugh"
       },
       {
-        "text": "hi bot",
-        "intent": "greet"
+        "intent": "get_happy_images",
+        "text": "Please make me laugh"
       },
       {
-        "text": "greetings",
-        "intent": "greet"
+        "intent": "get_happy_images",
+        "text": "Can you show me something amusing?"
       },
       {
-        "text": "good morning",
-        "intent": "greet"
+        "intent": "get_happy_images",
+        "text": "Amuse me"
       },
       {
-        "text": "good evening",
-        "intent": "greet"
+        "intent": "get_happy_images",
+        "text": "Make me roll"
       },
       {
-        "text": "hi again",
-        "intent": "greet"
+        "intent": "get_happy_images",
+        "text": "Get me a happy image"
       },
       {
-        "text": "hey pal!",
-        "intent": "greet"
+        "intent": "get_happy_images",
+        "text": "I want to be happy"
       },
       {
-        "text": "hi friend",
-        "intent": "greet"
+        "intent": "get_happy_images",
+        "text": "Show me something"
       },
       {
-        "text": "hello anybody here?",
-        "intent": "greet"
+        "intent": "get_happy_images",
+        "text": "Can you show me something amusing?"
       },
       {
-        "text": "hello help me!",
-        "intent": "greet"
+        "intent": "greet",
+        "text": "hi"
       },
       {
-        "text": "can you help me?",
-        "intent": "greet"
+        "intent": "greet",
+        "text": "hey"
       },
       {
-        "text": "please help",
-        "intent": "greet"
+        "intent": "greet",
+        "text": "hello"
       },
       {
-        "text": "pls help me",
-        "intent": "greet"
+        "intent": "greet",
+        "text": "hey bot"
       },
       {
-        "text": "hello how are you",
-        "intent": "greet"
+        "intent": "greet",
+        "text": "hey doc"
       },
       {
-        "text": "hey",
-        "intent": "greet"
+        "intent": "greet",
+        "text": "hello doctor"
       },
       {
-        "text": "hey",
-        "intent": "greet"
+        "intent": "greet",
+        "text": "hi bot"
       },
       {
-        "text": "hello",
-        "intent": "greet"
+        "intent": "greet",
+        "text": "greetings"
       },
       {
-        "text": "hi there",
-        "intent": "greet"
+        "intent": "greet",
+        "text": "good morning"
       },
       {
-        "text": "hey ther",
-        "intent": "greet"
+        "intent": "greet",
+        "text": "good evening"
       },
       {
-        "text": "What should I take if I have headache",
+        "intent": "greet",
+        "text": "hi again"
+      },
+      {
+        "intent": "greet",
+        "text": "hey pal!"
+      },
+      {
+        "intent": "greet",
+        "text": "hi friend"
+      },
+      {
+        "intent": "greet",
+        "text": "hello anybody here?"
+      },
+      {
+        "intent": "greet",
+        "text": "hello help me!"
+      },
+      {
+        "intent": "greet",
+        "text": "can you help me?"
+      },
+      {
+        "intent": "greet",
+        "text": "please help"
+      },
+      {
+        "intent": "greet",
+        "text": "pls help me"
+      },
+      {
+        "intent": "greet",
+        "text": "hello how are you"
+      },
+      {
+        "intent": "greet",
+        "text": "hey"
+      },
+      {
+        "intent": "greet",
+        "text": "hey"
+      },
+      {
+        "intent": "greet",
+        "text": "hello"
+      },
+      {
+        "intent": "greet",
+        "text": "hi there"
+      },
+      {
+        "intent": "greet",
+        "text": "hey ther"
+      },
+      {
+        "intent": "greet",
+        "text": "Hi good morning"
+      },
+      {
+        "intent": "medicine",
         "entities": [
           {
+            "start": 29,
             "entity": "symptom",
             "value": "headache",
-            "end": 37,
-            "start": 29
+            "end": 37
           }
         ],
-        "intent": "medicine"
+        "text": "What should I take if I have headache"
       },
       {
-        "text": "I have got a headache",
+        "intent": "medicine",
         "entities": [
           {
+            "start": 13,
             "entity": "symptom",
             "value": "headache",
-            "end": 21,
-            "start": 13
+            "end": 21
           }
         ],
-        "intent": "medicine"
+        "text": "I have got a headache"
       },
       {
-        "text": "I am having headache",
+        "intent": "medicine",
         "entities": [
           {
+            "start": 12,
             "entity": "symptom",
             "value": "headache",
-            "end": 20,
-            "start": 12
+            "end": 20
           }
         ],
-        "intent": "medicine"
+        "text": "I am having headache"
       },
       {
-        "text": "I have asthma",
+        "intent": "medicine",
         "entities": [
           {
+            "start": 7,
             "entity": "symptom",
             "value": "asthma",
-            "end": 13,
-            "start": 7
+            "end": 13
           }
         ],
-        "intent": "medicine"
+        "text": "I have asthma"
       },
       {
-        "text": "I am having a headache",
+        "intent": "medicine",
         "entities": [
           {
+            "start": 14,
             "entity": "symptom",
             "value": "headache",
-            "end": 22,
-            "start": 14
+            "end": 22
           }
         ],
-        "intent": "medicine"
+        "text": "I am having a headache"
       },
       {
-        "text": "i have a headache",
+        "intent": "medicine",
         "entities": [
           {
+            "start": 9,
             "entity": "symptom",
             "value": "headache",
-            "end": 17,
-            "start": 9
+            "end": 17
           }
         ],
-        "intent": "medicine"
+        "text": "i have a headache"
       },
       {
-        "text": "i have a headache",
+        "intent": "medicine",
         "entities": [
           {
+            "start": 9,
             "entity": "symptom",
             "value": "headache",
-            "end": 17,
-            "start": 9
+            "end": 17
           }
         ],
-        "intent": "medicine"
+        "text": "i have a headache"
       },
       {
-        "text": "What is the global optimum of a non-convex function",
-        "intent": "out_of_scope"
+        "intent": "out_of_scope",
+        "text": "What is the global optimum of a non-convex function"
       },
       {
-        "text": "Tell me about quantum computing",
-        "intent": "out_of_scope"
+        "intent": "out_of_scope",
+        "text": "Tell me about quantum computing"
       },
       {
-        "text": "Who is Donald Trump?",
+        "intent": "out_of_scope",
         "entities": [
           {
+            "start": 7,
             "entity": "name",
             "value": "Donald Trump",
-            "end": 19,
-            "start": 7
+            "end": 19
           }
         ],
-        "intent": "out_of_scope"
+        "text": "Who is Donald Trump?"
       },
       {
-        "text": "What do you think an idiot looks like?",
-        "intent": "out_of_scope"
+        "intent": "out_of_scope",
+        "text": "What do you think an idiot looks like?"
       },
       {
-        "text": "Why is Gamora?",
+        "intent": "out_of_scope",
         "entities": [
           {
+            "start": 7,
             "entity": "name",
             "value": "Gamora",
-            "end": 13,
-            "start": 7
+            "end": 13
           }
         ],
-        "intent": "out_of_scope"
+        "text": "Why is Gamora?"
       },
       {
-        "text": "What is Gamora?",
+        "intent": "out_of_scope",
         "entities": [
           {
+            "start": 8,
             "entity": "name",
             "value": "Gamora",
-            "end": 14,
-            "start": 8
+            "end": 14
           }
         ],
-        "intent": "out_of_scope"
+        "text": "What is Gamora?"
       },
       {
-        "text": "Do you know anything about soccer",
-        "intent": "out_of_scope"
+        "intent": "out_of_scope",
+        "text": "Do you know anything about soccer"
       },
       {
-        "text": "Tell me about football",
-        "intent": "out_of_scope"
+        "intent": "out_of_scope",
+        "text": "Tell me about football"
       },
       {
-        "text": "What is quantum computing",
-        "intent": "out_of_scope"
+        "intent": "out_of_scope",
+        "text": "What is quantum computing"
       },
       {
-        "text": "Do you know about soccer?",
-        "intent": "out_of_scope"
+        "intent": "out_of_scope",
+        "text": "Do you know about soccer?"
       },
       {
-        "text": "Do you know who is Justin Trudeau",
-        "intent": "out_of_scope"
+        "intent": "out_of_scope",
+        "text": "Do you know who is Justin Trudeau"
       },
       {
-        "text": "Do you know quantum computing?",
-        "intent": "out_of_scope"
+        "intent": "out_of_scope",
+        "text": "Do you know quantum computing?"
       },
       {
-        "text": "thank you",
-        "intent": "thank"
+        "intent": "thank",
+        "text": "thank you"
       },
       {
-        "text": "thanks",
-        "intent": "thank"
+        "intent": "thank",
+        "text": "thanks"
       },
       {
-        "text": "thank you so much",
-        "intent": "thank"
+        "intent": "thank",
+        "text": "thank you so much"
       },
       {
-        "text": "thanks bot",
-        "intent": "thank"
+        "intent": "thank",
+        "text": "thanks bot"
       },
       {
-        "text": "thanks doctor",
-        "intent": "thank"
+        "intent": "thank",
+        "text": "thanks doctor"
       },
       {
-        "text": "thanks for that",
-        "intent": "thank"
+        "intent": "thank",
+        "text": "thanks for that"
       },
       {
-        "text": "thanks for helping me",
-        "intent": "thank"
+        "intent": "thank",
+        "text": "thanks for helping me"
       },
       {
-        "text": "thanks for the help!",
-        "intent": "thank"
+        "intent": "thank",
+        "text": "thanks for the help!"
       },
       {
-        "text": "ok, thanks!!",
-        "intent": "thank"
+        "intent": "thank",
+        "text": "ok, thanks!!"
       },
       {
-        "text": "perfect",
-        "intent": "thank"
+        "intent": "thank",
+        "text": "perfect"
       },
       {
-        "text": "thanks a lot",
-        "intent": "thank"
+        "intent": "thank",
+        "text": "thanks a lot"
       },
       {
-        "text": "amazing thanks",
-        "intent": "thank"
+        "intent": "thank",
+        "text": "amazing thanks"
       },
       {
-        "text": "cool, thanks",
-        "intent": "thank"
+        "intent": "thank",
+        "text": "cool, thanks"
       },
       {
-        "text": "thank you for the suggestion",
-        "intent": "thank"
+        "intent": "thank",
+        "text": "thank you for the suggestion"
       },
       {
-        "text": "how can i thank you?",
-        "intent": "thank"
+        "intent": "thank",
+        "text": "how can i thank you?"
       },
       {
-        "text": "great work",
-        "intent": "thank"
+        "intent": "thank",
+        "text": "great work"
       },
       {
-        "text": "great suggestion",
-        "intent": "thank"
+        "intent": "thank",
+        "text": "great suggestion"
       },
       {
-        "text": "You are great thank you",
-        "intent": "thank"
+        "intent": "thank",
+        "text": "You are great thank you"
       },
       {
-        "text": "I want to thank you",
-        "intent": "thank"
+        "intent": "thank",
+        "text": "I want to thank you"
       },
       {
-        "text": "Can you get me image of a cat?",
-        "intent": "get_happy_images"
+        "intent": "thank",
+        "text": "thanks"
       },
       {
-        "text": "Can you make me happy?",
-        "intent": "get_happy_images"
+        "intent": "choice",
+        "text": "Is Mount Everest tallest or not?"
       },
       {
-        "text": "Make me smile",
-        "intent": "get_happy_images"
+        "intent": "choice",
+        "text": "Is Trump idiot or not"
       },
       {
-        "text": "I am feeling sad",
-        "intent": "get_happy_images"
+        "intent": "choice",
+        "text": "Will Tony Stark survive or not?"
       },
       {
-        "text": "I dont feel good",
-        "intent": "get_happy_images"
+        "intent": "choice",
+        "text": "Will I survive from the snap or not?"
       },
       {
-        "text": "Make me laugh",
-        "intent": "get_happy_images"
+        "intent": "choice",
+        "text": "Are you a male?"
       },
       {
-        "text": "Please make me laugh",
-        "intent": "get_happy_images"
+        "intent": "choice",
+        "text": "Are you a female?"
       },
       {
-        "text": "Can you show me something amusing?",
-        "intent": "get_happy_images"
+        "intent": "choice",
+        "text": "Are you a bot?"
       },
       {
-        "text": "Amuse me",
-        "intent": "get_happy_images"
-      },
-      {
-        "text": "Make me roll",
-        "intent": "get_happy_images"
-      },
-      {
-        "text": "Get me a happy image",
-        "intent": "get_happy_images"
-      },
-      {
-        "text": "I want to be happy",
-        "intent": "get_happy_images"
-      },
-      {
-        "text": "Show me something",
-        "intent": "get_happy_images"
+        "intent": "choice",
+        "text": "Are you a human"
       }
     ],
+    "entity_synonyms": [
+      {
+        "synonyms": [
+          "Arun"
+        ],
+        "value": "arun"
+      }
+    ],
+    "regex_features": [],
     "lookup_tables": []
   }
 }

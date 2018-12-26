@@ -1,10 +1,12 @@
 {
+    "rasa_nlu_version": "0.13.8",
+    "language": "en",
     "pipeline": [
         {
-            "name": "nlp_spacy",
             "class": "rasa_nlu.utils.spacy_utils.SpacyNLP",
             "case_sensitive": false,
-            "model": "en"
+            "model": "en",
+            "name": "nlp_spacy"
         },
         {
             "name": "tokenizer_spacy",
@@ -15,16 +17,12 @@
             "class": "rasa_nlu.featurizers.spacy_featurizer.SpacyFeaturizer"
         },
         {
+            "classifier_file": "intent_classifier_sklearn.pkl",
+            "scoring_function": "f1_weighted",
+            "name": "intent_classifier_sklearn",
             "gamma": [
                 0.1
             ],
-            "name": "intent_classifier_sklearn",
-            "kernels": [
-                "linear"
-            ],
-            "class": "rasa_nlu.classifiers.sklearn_intent_classifier.SklearnIntentClassifier",
-            "classifier_file": "intent_classifier_sklearn.pkl",
-            "max_cross_validation_folds": 5,
             "C": [
                 1,
                 2,
@@ -33,10 +31,13 @@
                 20,
                 100
             ],
-            "scoring_function": "f1_weighted"
+            "class": "rasa_nlu.classifiers.sklearn_intent_classifier.SklearnIntentClassifier",
+            "max_cross_validation_folds": 5,
+            "kernels": [
+                "linear"
+            ]
         },
         {
-            "L1_c": 0.1,
             "features": [
                 [
                     "low",
@@ -64,14 +65,13 @@
             ],
             "max_iterations": 50,
             "name": "ner_crf",
+            "L1_c": 0.1,
+            "BILOU_flag": true,
             "L2_c": 0.1,
-            "class": "rasa_nlu.extractors.crf_entity_extractor.CRFEntityExtractor",
             "classifier_file": "crf_model.pkl",
-            "BILOU_flag": true
+            "class": "rasa_nlu.extractors.crf_entity_extractor.CRFEntityExtractor"
         }
     ],
-    "language": "en",
-    "trained_at": "20181226-225321",
-    "training_data": "training_data.json",
-    "rasa_nlu_version": "0.13.8"
+    "trained_at": "20181226-234501",
+    "training_data": "training_data.json"
 }
