@@ -15,7 +15,8 @@ class ActionMed(Action):
     def run(self, dispatcher, tracker, domain):
         api = infermedica_api.API(app_id=os.environ['APP_ID'],
                                   app_key=os.environ['API_KEY'])
-
+        choices = {}
+        buttons = []
         symp = tracker.get_slot('symptom')
         request = infermedica_api.Diagnosis(sex='male', age='25')
 
@@ -24,10 +25,19 @@ class ActionMed(Action):
         request.add_symptom(symp_id, 'present')
 
         request = api.diagnosis(request)
+        items = request.question.items
+
+        for choice in items:
+            choices[choice['id']] = choice['name']
 
         response = request.question.text
+
+        for key, value in choices.items():
+            title = value
+            payload = ('/slot{\"choice\": ' + key + '}')
+            buttons.append({"title": title, "payload": payload})
         #  response = "Let's try this medicine"
 
-        dispatcher.utter_message(response)
+        dispatcher.utter_button_message(response, buttons)
         return [SlotSet('symptom', symp)]
 
