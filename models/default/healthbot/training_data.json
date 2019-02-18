@@ -1,5 +1,15 @@
 {
   "rasa_nlu_data": {
+    "lookup_tables": [],
+    "regex_features": [],
+    "entity_synonyms": [
+      {
+        "synonyms": [
+          "Arun"
+        ],
+        "value": "arun"
+      }
+    ],
     "common_examples": [
       {
         "intent": "ask_name",
@@ -7,8 +17,8 @@
           {
             "start": 11,
             "entity": "name",
-            "value": "Arun",
-            "end": 15
+            "end": 15,
+            "value": "Arun"
           }
         ],
         "text": "My name is Arun"
@@ -19,8 +29,8 @@
           {
             "start": 5,
             "entity": "name",
-            "value": "Abhinav",
-            "end": 12
+            "end": 12,
+            "value": "Abhinav"
           }
         ],
         "text": "I am Abhinav"
@@ -31,8 +41,8 @@
           {
             "start": 4,
             "entity": "name",
-            "value": "Shrutika",
-            "end": 12
+            "end": 12,
+            "value": "Shrutika"
           }
         ],
         "text": "I'm Shrutika"
@@ -43,8 +53,8 @@
           {
             "start": 15,
             "entity": "name",
-            "value": "Billy",
-            "end": 20
+            "end": 20,
+            "value": "Billy"
           }
         ],
         "text": "People call me Billy"
@@ -55,8 +65,8 @@
           {
             "start": 16,
             "entity": "name",
-            "value": "Arun",
-            "end": 20
+            "end": 20,
+            "value": "Arun"
           }
         ],
         "text": "You can call me Arun"
@@ -67,8 +77,8 @@
           {
             "start": 11,
             "entity": "name",
-            "value": "arun",
-            "end": 15
+            "end": 15,
+            "value": "arun"
           }
         ],
         "text": "My name is Arun"
@@ -303,8 +313,8 @@
           {
             "start": 29,
             "entity": "symptom",
-            "value": "headache",
-            "end": 37
+            "end": 37,
+            "value": "headache"
           }
         ],
         "text": "What should I take if I have headache"
@@ -315,8 +325,8 @@
           {
             "start": 13,
             "entity": "symptom",
-            "value": "headache",
-            "end": 21
+            "end": 21,
+            "value": "headache"
           }
         ],
         "text": "I have got a headache"
@@ -327,8 +337,8 @@
           {
             "start": 12,
             "entity": "symptom",
-            "value": "headache",
-            "end": 20
+            "end": 20,
+            "value": "headache"
           }
         ],
         "text": "I am having headache"
@@ -339,8 +349,8 @@
           {
             "start": 7,
             "entity": "symptom",
-            "value": "asthma",
-            "end": 13
+            "end": 13,
+            "value": "asthma"
           }
         ],
         "text": "I have asthma"
@@ -351,8 +361,8 @@
           {
             "start": 14,
             "entity": "symptom",
-            "value": "headache",
-            "end": 22
+            "end": 22,
+            "value": "headache"
           }
         ],
         "text": "I am having a headache"
@@ -363,8 +373,8 @@
           {
             "start": 9,
             "entity": "symptom",
-            "value": "headache",
-            "end": 17
+            "end": 17,
+            "value": "headache"
           }
         ],
         "text": "i have a headache"
@@ -375,11 +385,35 @@
           {
             "start": 9,
             "entity": "symptom",
-            "value": "headache",
-            "end": 17
+            "end": 17,
+            "value": "headache"
           }
         ],
         "text": "i have a headache"
+      },
+      {
+        "intent": "medicine",
+        "entities": [
+          {
+            "start": 9,
+            "entity": "symptom",
+            "end": 17,
+            "value": "headache"
+          }
+        ],
+        "text": "i have a headache"
+      },
+      {
+        "intent": "medicine",
+        "entities": [
+          {
+            "start": 14,
+            "entity": "symptom",
+            "end": 22,
+            "value": "headache"
+          }
+        ],
+        "text": "I am having a headache"
       },
       {
         "intent": "out_of_scope",
@@ -395,8 +429,8 @@
           {
             "start": 7,
             "entity": "name",
-            "value": "Donald Trump",
-            "end": 19
+            "end": 19,
+            "value": "Donald Trump"
           }
         ],
         "text": "Who is Donald Trump?"
@@ -411,8 +445,8 @@
           {
             "start": 7,
             "entity": "name",
-            "value": "Gamora",
-            "end": 13
+            "end": 13,
+            "value": "Gamora"
           }
         ],
         "text": "Why is Gamora?"
@@ -423,8 +457,8 @@
           {
             "start": 8,
             "entity": "name",
-            "value": "Gamora",
-            "end": 14
+            "end": 14,
+            "value": "Gamora"
           }
         ],
         "text": "What is Gamora?"
@@ -532,49 +566,7 @@
       {
         "intent": "thank",
         "text": "thanks"
-      },
-      {
-        "intent": "choice",
-        "text": "Is Mount Everest tallest or not?"
-      },
-      {
-        "intent": "choice",
-        "text": "Is Trump idiot or not"
-      },
-      {
-        "intent": "choice",
-        "text": "Will Tony Stark survive or not?"
-      },
-      {
-        "intent": "choice",
-        "text": "Will I survive from the snap or not?"
-      },
-      {
-        "intent": "choice",
-        "text": "Are you a male?"
-      },
-      {
-        "intent": "choice",
-        "text": "Are you a female?"
-      },
-      {
-        "intent": "choice",
-        "text": "Are you a bot?"
-      },
-      {
-        "intent": "choice",
-        "text": "Are you a human"
       }
-    ],
-    "entity_synonyms": [
-      {
-        "synonyms": [
-          "Arun"
-        ],
-        "value": "arun"
-      }
-    ],
-    "regex_features": [],
-    "lookup_tables": []
+    ]
   }
 }

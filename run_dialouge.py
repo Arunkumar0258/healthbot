@@ -24,8 +24,8 @@ def train_dialouge(domain_file='domain.yml',
                    training_data_file='./data/stories.md'):
 
     fallback = FallbackPolicy(fallback_action_name='action_default_fallback',
-                              core_threshold = 0.4,
-                              nlu_threshold=0.3)
+                              core_threshold = 0.3,
+                              nlu_threshold=0.1)
 
     agent = Agent(domain_file,
                   policies=[MemoizationPolicy(),

@@ -34,10 +34,13 @@ class ActionMed(Action):
 
         for key, value in choices.items():
             title = value
-            payload = ('/slot{\"choice\": ' + key + '}')
-            buttons.append({"title": title, "payload": payload})
+            request.add_symptom(key, 'present')
+            request = api.diagnosis(request)
+            text = request.question.text
+            buttons.append({"title": title, "payload": text})
         #  response = "Let's try this medicine"
 
         dispatcher.utter_button_message(response, buttons)
-        return [SlotSet('symptom', symp)]
+        #  return [SlotSet('symptom', symp)]
+        return []
 

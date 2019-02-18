@@ -25,19 +25,6 @@
 - I have to go.
 - I am going now
 
-## intent:choice
-- Is Mount Everest tallest or not?
-- Is Trump idiot or not
-- Will Tony Stark survive or not?
-- Will I survive from the snap or not?
-- Are you a male?
-- Are you a female?
-- Are you a bot?
-- Are you a human
-- Are you a male?
-- Are you a girl?
-- Is Donald Trump an idiot?
-
 ## intent:get_happy_images
 - Can you get me image of a cat?
 - Can you make me happy?
@@ -89,6 +76,8 @@
 - I am having a [headache](symptom)
 - i have a [headache](symptom)
 - i have a [headache](symptom)
+- i have a [headache](symptom)
+- I am having a [headache](symptom)
 
 ## intent:out_of_scope
 - What is the global optimum of a non-convex function

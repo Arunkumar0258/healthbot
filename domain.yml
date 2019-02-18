@@ -1,26 +1,24 @@
 %YAML 1.1
 ---
 actions:
-- utter_ask_name
-- utter_greet
-- utter_thank
-- utter_choice
-- utter_default
 - action_medicine
-- utter_get_happy_images
 - utter_bye
+- utter_thank
+- utter_default
+- utter_greet
+- utter_get_happy_images
+- utter_ask_name
 entities:
-- symptom
 - name
+- symptom
 intents:
-- greet
-- ask_name
 - medicine
-- bye
 - thank
-- out_of_scope
+- ask_name
 - get_happy_images
-- choice
+- bye
+- out_of_scope
+- greet
 slots:
   name:
     type: text
@@ -36,13 +34,6 @@ templates:
   - text: Talk to you later {name}
   - text: Goodbye
   - text: Bye, it was nice talking to you!
-  utter_choice:
-  - buttons:
-    - payload: 'Yes'
-      title: 'Yes'
-    - payload: 'No'
-      title: 'No'
-    text: Choose any one
   utter_default:
   - text: Sorry, I did not understand you
   utter_get_happy_images:

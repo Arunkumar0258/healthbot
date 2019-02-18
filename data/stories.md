@@ -72,11 +72,13 @@
 * thank
     - utter_thank
 
-## Generated Story 6407878281990043599
-* choice
-    - utter_choice
-* choice
-    - utter_choice
-* choice
-    - utter_choice
+## Generated Story -1673797503190098972
+* medicine{"symptom": "headache"}
+    - slot{"symptom": "headache"}
+    - action_medicine
+    - slot{"symptom": {"mentions": [{"type": "symptom", "name": "Headache", "orth": "headache", "common_name": "Headache", "id": "s_21", "choice_id": "present"}]}}
+* medicine{"symptom": "headache"}
+    - slot{"symptom": "headache"}
+    - action_medicine
+    - slot{"symptom": {"mentions": [{"type": "symptom", "name": "Headache", "orth": "headache", "common_name": "Headache", "id": "s_21", "choice_id": "present"}]}}
 
